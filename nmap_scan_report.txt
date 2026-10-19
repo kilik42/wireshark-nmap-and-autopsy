@@ -1,0 +1,25 @@
+# FICTIONAL SAMPLE REPORT. Nothing here was scanned. All addresses are from the
+# documentation-only range 192.0.2.0/24. Do not scan anything to recreate this.
+#
+# Nmap 7.95 scan initiated Thu Oct  8 09:15:02 2026 as: nmap -sV 192.0.2.10 192.0.2.20 192.0.2.30
+Nmap scan report for lab-server.example (192.0.2.10)
+Host is up (0.0021s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE   VERSION
+22/tcp   open     ssh       OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+23/tcp   open     telnet    Linux telnetd
+80/tcp   open     http      Apache httpd 2.4.52 ((Ubuntu))
+443/tcp  open     ssl/http  Apache httpd 2.4.52 ((Ubuntu))
+3306/tcp open     mysql     MySQL 5.7.42
+8080/tcp filtered http-proxy
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for hallway-printer.example (192.0.2.20)
+Host is up (0.0150s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE    VERSION
+80/tcp   open     http       HP embedded web server
+515/tcp  filtered printer
+9100/tcp open     jetdirect?
+
+Nmap done: 3 IP addresses (2 hosts up) scanned in 9.87 seconds
